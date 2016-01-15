@@ -13,7 +13,7 @@ public class DepartmentTest extends TestCase {
     private HashMap<Employee, Integer> employeeTestCases;
     private HashMap<ArrayList<Employee>, Integer> arrTestCases;
 
-    private void setupTestCases() {
+    protected void setUp() {
         employeeTestCases = new HashMap<>();
         arrTestCases = new HashMap<>();
 
@@ -52,8 +52,6 @@ public class DepartmentTest extends TestCase {
     }
 
     public void testGetAllocation() {
-
-        setupTestCases();
 
         int i = 0;
         for (HashMap.Entry<Employee, Integer> test : employeeTestCases.entrySet()) {
