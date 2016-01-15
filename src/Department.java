@@ -13,7 +13,7 @@ public class Department {
     }
 
     public Department(Employee e) {
-        Board = new ArrayList<Employee>();
+        Board = new ArrayList<>();
         Board.add(e);
     }
 
