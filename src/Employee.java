@@ -4,7 +4,8 @@ import java.util.ArrayList;
  * Created by nyefan on 1/14/16.
  */
 public abstract class Employee {
-
+    
+    //TODO: check that this can be changed to private/protected, and do so, if possible
     public abstract int getLocalAllocation();
 
     public ArrayList<Employee> directSubordinates = null;
